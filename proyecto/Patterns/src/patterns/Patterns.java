@@ -31,9 +31,16 @@ public class Patterns {
         // probarFactory();
         //   probarAbstractMethod();
         //        probarBuilder();
-        probarPrototype();
+        // probarPrototype();
+        probarSingleton();
     }
     
+    private static void probarSingleton(){
+        // No se puede instanciar de esta manera yq que es privado
+        // patterns.creational.singleton.Card card = new patterns.creational.singleton.Card();
+        patterns.creational.singleton.Card.getINSTANCE().setCardNumber("123");
+        System.out.println(patterns.creational.singleton.Card.getINSTANCE().getCardNumber());
+    }
     private static void probarPrototype(){
         PrototypeFactory.loadCard();
         try{
