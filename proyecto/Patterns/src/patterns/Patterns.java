@@ -25,7 +25,17 @@ public class Patterns {
     public static void main(String[] args) {
         // TODO code application logic here
         // probarFactory();
-        probarAbstractMethod();
+        //   probarAbstractMethod();
+        probarBuilder();
+    }
+    
+    private static void probarBuilder(){
+        patterns.creational.builder.Card card = new patterns.creational.builder.Card.CardBuilder("VISA", "0000 1111 2222 3333")
+                .name("KAren").expires(2030).credit(true).build();
+        System.out.println(card);
+        
+        patterns.creational.builder.Card card2 = new patterns.creational.builder.Card.CardBuilder("VISA", "123456").build();
+        System.out.println(card2);
     }
     
     private static void probarAbstractMethod(){
