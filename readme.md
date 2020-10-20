@@ -1,8 +1,8 @@
 # Software Design patterns
 
-- [Patrones creacionales] (#patrones-creaciones) 
-* Patrones estructurales
-* Patrones de compportamiento
+* [Patrones creacionales](#patrones-creaciones) 
+* [Patrones estructurales](#patrones-estructurales)
+* [Patrones de compportamiento](#patrones-de-comportamiento)
 
 ## Patrones Creaciones
 
