@@ -12,7 +12,11 @@ import patterns.creational.abstractFactory.PaymentMethod;
 import patterns.creational.factory.Payment;
 import patterns.creational.factory.PaymentFactory;
 import patterns.creational.factory.TypePayment;
+import patterns.creational.prototype.PrototypeCard;
+import patterns.creational.prototype.PrototypeFactory;
 
+import static patterns.creational.prototype.PrototypeFactory.CardType.VISA;
+import static patterns.creational.prototype.PrototypeFactory.CardType.AMEX;
 /**
  *
  * @author linux
@@ -26,7 +30,21 @@ public class Patterns {
         // TODO code application logic here
         // probarFactory();
         //   probarAbstractMethod();
-        probarBuilder();
+        //        probarBuilder();
+        probarPrototype();
+    }
+    
+    private static void probarPrototype(){
+        PrototypeFactory.loadCard();
+        try{
+            PrototypeCard visa = PrototypeFactory.getInstance(VISA);
+            visa.getCard();
+            
+            PrototypeCard amex = PrototypeFactory.getInstance(AMEX);
+            amex.getCard();
+        }catch(CloneNotSupportedException e){
+            e.printStackTrace();
+        }
     }
     
     private static void probarBuilder(){

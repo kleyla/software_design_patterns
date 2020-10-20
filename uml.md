@@ -1,11 +1,11 @@
 # UML
 
-* [Diagrama de clases](#Diagrama-de-clases)
-* [Simbolo Herencia](#Simbolo-Herencia)
-* [Simbolo Asociacion](#Simbolo-Asociacion)
-* [Simbolo Dependencia](#Simbolo-Dependencia)
-* [Simbolo Agregacion](#Simbolo-Agregacion)
-* [Simbolo Composicion](#Simbolo-Composicion)
+- [Diagrama de clases](#Diagrama-de-clases)
+- [Simbolo Herencia](#Simbolo-Herencia)
+- [Simbolo Asociacion](#Simbolo-Asociacion)
+- [Simbolo Dependencia](#Simbolo-Dependencia)
+- [Simbolo Agregacion](#Simbolo-Agregacion)
+- [Simbolo Composicion](#Simbolo-Composicion)
 
 ## Diagrama de clases
 
