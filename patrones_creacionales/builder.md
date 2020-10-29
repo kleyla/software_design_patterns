@@ -1,6 +1,6 @@
 # Builder
 
-![Imagen](./images/builder.png)
+![Imagen](./../images/builder.png)
 
 ## Ventajas
 

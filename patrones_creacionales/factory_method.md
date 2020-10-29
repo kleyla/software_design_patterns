@@ -1,3 +1,3 @@
 # Factory Method
 
-![Image](./images/factory_method.png)
+![Image](./../images/factory_method.png)

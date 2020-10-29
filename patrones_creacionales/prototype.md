@@ -1,6 +1,6 @@
 # Prototype
 
-![Imagen](./images/prototype.png)
+![Imagen](./../images/prototype.png)
 
 ## Ventajas
 

@@ -1,3 +1,3 @@
 # Abstract Factory
 
-![Image](./images/abstract_factory.png)
+![Image](./../images/abstract_factory.png)
