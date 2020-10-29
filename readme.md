@@ -2,7 +2,7 @@
 
 - [Patrones creacionales](#patrones-creaciones)
 - [Patrones estructurales](#patrones-estructurales)
-- [Patrones de compportamiento](#patrones-de-comportamiento)
+- [Patrones de comportamiento](#patrones-de-comportamiento)
 
 ## Patrones Creaciones
 
