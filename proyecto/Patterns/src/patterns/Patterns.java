@@ -5,6 +5,11 @@
  */
 package patterns;
 
+import patterns.behavioral.chainOfResponsability.Tarjeta;
+import patterns.behavioral.command.CreditCard;
+import patterns.behavioral.command.CreditCardActivateCommand;
+import patterns.behavioral.command.CreditCardDesactivateCommand;
+import patterns.behavioral.command.CreditCardInvoker;
 import patterns.creational.abstractFactory.AbstractFactory;
 import patterns.creational.abstractFactory.Card;
 import patterns.creational.abstractFactory.FactoryProvider;
@@ -27,14 +32,33 @@ public class Patterns {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // PATRONES CREACIONALES
         // probarFactory();
         //   probarAbstractMethod();
         //        probarBuilder();
         // probarPrototype();
-        probarSingleton();
+        // probarSingleton();
+        
+        // PATRONES DE COMPORTAMIENTO
+         // probarChainOfResponsability();
+         probarCommand();
     }
     
+    private static void probarCommand(){
+        CreditCard creditCard = new CreditCard();
+        CreditCard creditCardDesactivate = new CreditCard();
+        
+        CreditCardInvoker invoker = new CreditCardInvoker();
+        invoker.setCommand(new CreditCardActivateCommand(creditCard));
+        invoker.run();
+        System.out.println("------------------------------");
+        invoker.setCommand(new CreditCardDesactivateCommand(creditCardDesactivate));
+        invoker.run();
+    }
+    private static void probarChainOfResponsability(){
+        Tarjeta tarjeta = new Tarjeta();
+        tarjeta.crediCardRequest(100000);
+    }
     private static void probarSingleton(){
         // No se puede instanciar de esta manera yq que es privado
         // patterns.creational.singleton.Card card = new patterns.creational.singleton.Card();
